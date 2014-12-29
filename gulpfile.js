@@ -34,7 +34,7 @@ gulp.task('watcher',function(){
 });
 
 gulp.task('webserver',function(){
-	gulp.src('dist/w3')
+	gulp.src('dist')
 		.pipe(server({
 			livereload:true,
 			directoryListening:true,
