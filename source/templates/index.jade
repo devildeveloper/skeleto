@@ -1,6 +1,45 @@
-doctype html
-html
-	head
-		link(href="../css/main.css", rel="stylesheet",type="text/css")
-	body
-		p holi
+extends  layout
+block content
+	header
+		.sk-movil.sk-menu
+			span(class="icon-menu")
+			.sk-drop
+				nav
+					ul
+						li
+							a(href="#",class="selected") HOME
+						li
+							a(href="#") ABOUT ME
+						li
+							a(href="#") PORTAFOLIO
+						li
+							a(href="#") SERVICES
+						li
+							a(href="#") CONTACT
+		.slick
+			div content
+			div content
+	section(class="about")
+		.row
+			.small-12.large-6.column
+				.row
+					.small-12.column
+						.skill.centered
+							img(src="../images/web_circle.png",alt="diseño web")
+							h1 Diseñ Web
+							p lorem ipsum
+					.small-12.column
+						.skill.centered
+							img(src="../images/design_circle.png",alt="diseño publicitario")
+							h1 Diseñ Web
+							p lorem ipsum
+					.small-12.column
+						.skill.centered
+							img(src="../images/video_circle.png",alt="Edicion de video")
+							h1 Diseñ Web
+							p lorem ipsum
+			.large-6.hide-for-large-only.column
+	script(type="text/javascript",src="//code.jquery.com/jquery-1.11.0.min.js")
+	script(type="text/javascript",src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+	script(type="text/javascript",src="../js/slick/slick.min.js")
+	script(type="text/javascript",src="../js/main.js")
