@@ -2,7 +2,8 @@ extends  layout
 block content
 	header
 		.sk-movil.sk-menu
-			span(class="icon-menu")
+			.top
+				span(class="icon-menu")
 			.sk-drop
 				nav
 					ul
@@ -16,6 +17,38 @@ block content
 							a(href="#") SERVICES
 						li
 							a(href="#") CONTACT
+		.sk-desktop.sk-menu
+			.top
+				.row
+					.large-4.column
+						ul.inline-list.icons
+							li
+								a(href="#")
+									span.icon-linkedin2
+							li
+								a(href="#")
+									span.icon-linkedin2
+							li
+								a(href="#")
+									span.icon-pinterest
+							li
+								a(href="#")
+									span.icon-twitter
+							li
+								a(href="#")
+									span.icon-youtube3
+					.large-6.large-offset-2.column
+						ul.inline-list
+							li
+								a.selected(href="#") HOME
+							li
+								a(href="#") ABOUT ME
+							li
+								a(href="#") PORTAFOLIO
+							li
+								a(href="#") SERVICES
+							li
+								a(href="#") CONTACT
 		.slick
 			div content
 			div content
