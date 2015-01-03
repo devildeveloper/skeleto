@@ -1,6 +1,6 @@
 extends  layout
-include header
 block content
+	include header
 	section.slick
 		div content
 		div content
@@ -16,14 +16,24 @@ block content
 					.small-12.column
 						.skill.centered
 							img(src="../images/design_circle.png",alt="diseño publicitario")
-							h1 Diseñ Web
+							h1 Diseño publicitario e Ilustración digital
 							p lorem ipsum
 					.small-12.column
 						.skill.centered
 							img(src="../images/video_circle.png",alt="Edicion de video")
-							h1 Diseñ Web
+							h1 Edición de video y más
 							p lorem ipsum
 			.large-6.hide-for-large-only.column
+	section(class="portafolio")
+		h1(class="text-center") Algunos Trabajos
+		.row
+			.small-12.column
+				ul.galery
+					li
+						img(src="http://lorempixel.com/output/abstract-q-c-620-620-3.jpg",alt="imagen 1")
+					li
+						img(src="http://lorempixel.com/output/abstract-q-c-620-620-3.jpg",alt="imagen 1")
+	include footer
 	script(type="text/javascript",src="//code.jquery.com/jquery-1.11.0.min.js")
 	script(type="text/javascript",src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
 	script(type="text/javascript",src="../js/slick/slick.min.js")
