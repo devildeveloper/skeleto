@@ -1,0 +1,17 @@
+extends  web-components/layout
+block content
+   include web-components/header
+   .row
+      form.small-12.large-6.large-centered.column
+         h1.text-center.top_p_30 Contactame
+         p.text-center ¿tienes alguna pregunta, duda, sugerencia o comentario?
+         fieldset
+            input(type="text",name="nombres", placeholder="Nombres", required)
+            input(type="email",name="email",placeholder="E-mail",required=)
+            textarea(rows="6") Mensaje
+
+   include web-components/footer
+   script(type="text/javascript",src="//code.jquery.com/jquery-1.11.0.min.js")
+   script(type="text/javascript",src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+   script(type="text/javascript",src="../js/slick/slick.min.js")
+   script(type="text/javascript",src="../js/main.js")
