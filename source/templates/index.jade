@@ -1,28 +1,35 @@
 extends  web-components/layout
 block content
 	include web-components/header
-	section.slick
-		div content
-		div content
-	section(class="about")
+	section.red_color_bg.bottom_p_30
+		.slick
+			div content2
+			div content2323233
+	section.about
 		.row
 			.small-12.large-6.column
 				.row
-					.small-12.column
-						.skill.centered
-							img(src="../images/web_circle.png",alt="diseño web")
-							h1 Diseñ Web
-							p lorem ipsum
-					.small-12.column
-						.skill.centered
-							img(src="../images/design_circle.png",alt="diseño publicitario")
-							h1 Diseño publicitario e Ilustración digital
-							p lorem ipsum
-					.small-12.column
-						.skill.centered
-							img(src="../images/video_circle.png",alt="Edicion de video")
-							h1 Edición de video y más
-							p lorem ipsum
+					.small-12.column.sk-skill
+						.row
+							.small-12.large-4.column
+								img(src="../images/web_circle.png",alt="diseño web")
+							.small-12.large-8.column
+								h1 Diseñ Web
+								p lorem ipsum
+					.small-12.column.sk-skill
+						.row
+							.small-12.large-4.column
+								img(src="../images/design_circle.png",alt="diseño publicitario")
+							.small-12.large-8.column
+								h1 Diseño publicitario e Ilustración digital
+								p lorem ipsum
+					.small-12.column.sk-skill
+						.row
+							.small-12.large-4.column
+								img(src="../images/video_circle.png",alt="Edicion de video")
+							.small-12.large-8.column
+								h1 Edición de video y más
+								p lorem ipsum
 			.large-6.hide-for-large-only.column
 	section(class="portafolio")
 		h1(class="text-center") Algunos Trabajos
