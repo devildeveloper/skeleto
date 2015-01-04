@@ -10,4 +10,14 @@ $(document).on("ready",function(){
     $(".sk-movil.sk-menu .icon-menu").on("click",function(){
         $(".sk-drop").slideToggle();
     });
+    $(".portafolio .galery .content").hover(
+        function(){
+            $(this).children('.description').animate({
+                'bottom':'0px'
+            })
+        },function(){
+            $(this).children('.description').animate({
+                 'bottom':'-50px'
+            })
+    });
 })
