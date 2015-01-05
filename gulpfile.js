@@ -30,21 +30,26 @@ gulp.task('coffee-compile',function(){
 });
 //concat
 gulp.task('css-concat',function(){
-	gulp.src(['source/vendor/css/*.css','source/tmp/main.css'])
+	gulp.src(['source/vendor/css/normalize.css',
+				'source/vendor/css/foundation.min.css',
+				'source/vendor/css/icomoon.min.css',
+				'source/vendor/css/slick.css',
+				'source/tmp/main.css']
+		)
 		.pipe(gulpconcat('main.min.css'))
-		.pipe(gulp.dest('source/tmp/'))
+		.pipe(gulp.dest('dist/css/'))
 });
 //minify
 gulp.task('css-min',function(){
-	gulp.src('source/tmp/main.min.css')
-		.pipe(gulpcssmin({debug:true}))
-		.pipe(gulp.dest('dist/css/'))
+	gulp.src('source/vendor/css/*.css')
+		.pipe(gulpcssmin())
+		.pipe(gulp.dest('source/vendor/css/'))
 })
 //watcher
 gulp.task('watcher',function(){
 	console.log('Watcher is running');
 	gulp.watch('source/templates/*.jade',['jade-compile']);
-	gulp.watch('source/styl/*.styl',['stylus-compile','css-concat','css-min']);
+	gulp.watch('source/styl/*.styl',['stylus-compile','css-concat']);
 	gulp.watch('source/coffee/*.coffee',['coffee-compile']);
 });
 //webserver
