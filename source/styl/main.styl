@@ -11,6 +11,8 @@ red_color = #B70821
 	padding-top 30px
 .slick-dots li.slick-active button::before
 	color white
+.slick-dots li button::before
+	color white
 .block
 	display block
 	width 100%
@@ -116,6 +118,8 @@ body
 	.about
 		.sk-skill
 			margin-top 20px
+			&:nth-child(1)
+				margin-top 50px
 			h1
 				font-size 1em
 				text-align  center
@@ -125,6 +129,13 @@ body
 				border-radius 50%
 				display block
 				margin 0 auto
+		.doge
+			display block
+			margin  0 auto
+			margin-top 50px
+			border-radius 50%
+			width 450px
+			height 450px
 	.portafolio
 		background-color red_color
 		*
@@ -177,6 +188,8 @@ body
 	.sk-menu.sk-desktop
 		display block
 	.sk-menu.sk-movil
+		display none
+	.hide-for-large-up
 		display none
 	body
 		.about
