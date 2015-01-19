@@ -4,6 +4,8 @@ red_color = #B70821
 	background-color red_color
 .red_color_font
 	color red_color
+.white_color_font
+	color #ffffff
 //helpers
 .bottom_p_30
 	padding-bottom 30px
@@ -102,6 +104,26 @@ textarea
 	img
 		display  block
 		margin 0 auto
+#services-slick
+	.slick-prev,.slick-next
+		background-size 100%
+		background-position 0 0
+		width 50px
+		height 40px
+		&::before
+			content  ""
+	.slick-prev
+		left 0
+		background-image url(../images/btn_bangrisOver.png)
+	.slick-next
+		right 0
+		background-image url(../images/btn_bangris.png)
+	.slick-dots li button::before
+		font-size 20px
+	.slick-dots li.slick-active button::before
+		color red_color
+	.slick-dots li button::before,.slick-dots li button::before
+		color lightgray
 //end
 body
 	font-family 'Open Sans', sans-serif
