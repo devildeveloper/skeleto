@@ -1,6 +1,42 @@
 extends  web-components/layout
 block content
 	include web-components/header 
+	img.show-for-large-up(src="")
+	.row
+		.small-2.column.hide-for-large-up
+			img(src="")
+		.small-8.large-12.column.centered
+			h1 Mi Portafolio
+		.small-2.column.hide-for-large-up
+			img(src="")
+	.row
+		.small-12-column.centered
+			p Lorem 
+			img.show-for-large-down(src="")
+	section.red_color_bg.centered
+		#slickPortafolio
+			h2.white_color_font Diseño Web
+			.content
+				div
+					img(src="")
+				div
+					img(src="")
+				div
+					img(src="")
+				div
+					img(src="")
+	section.centered
+		h2 Multimedia	 
+		p lorem
+		img(src="")
+		#slickMultimedia
+			div
+				//- video de youtube 
+
+
+
+
+
 	include web-components/footer
 	script(type="text/javascript",src="//code.jquery.com/jquery-1.11.0.min.js")
 	script(type="text/javascript",src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
