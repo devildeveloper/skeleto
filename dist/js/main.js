@@ -12,7 +12,13 @@ $(document).on("ready",function(){
         dots:true,
         speed:500,
         arrows:true
-    })
+    });
+    $("#slickMultimedia").slick({
+        autoplay:true,
+        dots:false,
+        speed:500,
+        arrows:false
+    });
     $(".sk-movil.sk-menu .icon-menu").on("click",function(){
         $(".sk-drop").slideToggle();
     });
