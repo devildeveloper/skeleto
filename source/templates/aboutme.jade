@@ -1,7 +1,46 @@
 extends  web-components/layout
 block content
-	include web-components/header
-	include web-components/footer
+	.about
+		include web-components/header
+		section.centered
+			h1 Antonio Treneman Velarde
+			img(src="../images/DSC_0041.jpg")
+			p lorem
+			img.circle(src="http://i0.kym-cdn.com/photos/images/newsfeed/000/581/296/c09.jpg")
+			a.ico(href="")
+				img(src="../images/down_over.png")
+		section.red_color_bg
+			.row
+				.small-12.medium-4.column.centered
+					.item
+						img(src="../images/web_circle.png")
+						p
+							strong Diseños Webs 
+						p lorem
+				.small-12.medium-4.column.centered
+					.item
+						img(src="../images/design_circle.png")
+						p
+							strong Diseños Webs
+						p lorem 
+				.small-12.medium-4.column.centered
+					.item
+						img(src="../images/video_circle.png")
+						p
+							strong Diseños Webs
+						p lorem 					
+			.row
+				.small-12.small-centered.column
+					a.centered.ico(href="")
+						img(src="../images/vermas_white.png")
+		section
+			.row
+				.small-12.centered.column
+					p lorem
+					img(src="../images/behance.png")
+					a(href="")
+						img(src="")
+		include web-components/footer
 	script(type="text/javascript",src="//code.jquery.com/jquery-1.11.0.min.js")
 	script(type="text/javascript",src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
 	script(type="text/javascript",src="../js/slick/slick.min.js")
