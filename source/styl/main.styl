@@ -142,18 +142,59 @@ textarea
 	.slick-dots li button::before,.slick-dots li button::before
 		color lightgray
 #slickPortafolio
+	padding-bottom 30px
+	padding-top 30px
 	max-width 62.5rem
+	font-size 0
+	line-height 0
+	.slick-prev,.slick-next
+		background-size 100%
+		background-position 0 0
+		width 50px
+		height 40px
+		top -50px
+		&::before
+			content  ""
+	.slick-prev
+		left 10px
+		background-image url(../images/btn_bangrisOver.png)
+	.slick-next
+		right 10px
+		background-image url(../images/btn_bangris.png)
+	.slick-dots li button::before
+		font-size 20px
+	.slick-dots li.slick-active button::before
+		color white
+	.slick-dots li button::before,.slick-dots li button::before
+		color lightgray
 	.content
-		font-size 0px
-		letter-spacing 0px
-		word-spacing 0px
 		div
 			width 50%
 			display inline-block
 			background-color pink
 			img
 				width 100%
-
+#slickMultimedia
+	.slick-prev,.slick-next
+		background-size 100%
+		background-position 0 0
+		width 50px
+		height 40px
+		display none !important
+		&::before
+			content  ""
+	.slick-prev
+		left -60px
+		background-image url(../images/btn_bangrisOver.png)
+	.slick-next
+		right -60px
+		background-image url(../images/btn_bangris.png)
+	.slick-dots li button::before
+		font-size 20px
+	.slick-dots li.slick-active button::before
+		color red_color
+	.slick-dots li button::before,.slick-dots li button::before
+		color lightgray
 //end
 body
 	font-family 'Open Sans', sans-serif
@@ -293,8 +334,17 @@ body
 				li
 					display inline-flex
 					width 33%
+	#slickMultimedia
+		.slick-prev,.slick-next
+			display block !important				
 	#slickPortafolio
 		max-width 62.5rem
+		.slick-prev,.slick-next
+			top 50%
+		.slick-prev
+			left -30px
+		.slick-next
+			right -30px			
 		.content
 			font-size 0px
 			letter-spacing 0px

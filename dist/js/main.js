@@ -17,8 +17,14 @@ $(document).on("ready",function(){
         autoplay:true,
         dots:false,
         speed:500,
-        arrows:false
+        arrows:true
     });
+    $("#slickW").slick({
+        autoplay:true,
+        dots:true,
+        speed:500,
+        arrows:true
+    });    
     $(".sk-movil.sk-menu .icon-menu").on("click",function(){
         $(".sk-drop").slideToggle();
     });
