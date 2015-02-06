@@ -2,7 +2,8 @@ extends  web-components/layout
 block content
    include web-components/header
    .row
-      form.small-12.large-6.large-centered.column        
+      form.small-12.large-6.large-centered.column(method="post",action="http://forms.melodysoft.com")
+         input(type="hidden",name="id",value="tonio")
          h1.text-center.top_p_30 Contactame
          .row
             .large-2.column.hide-for-medium-down
