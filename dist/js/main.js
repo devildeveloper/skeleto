@@ -13,6 +13,11 @@ $(document).on("ready",function(){
         speed:500,
         arrows:true
     });
+    $("#services .ink").on('click',function(e){
+        e.preventDefault()
+        var target=$(this).attr('data-target');
+        $("#services-slick").slickGoTo(parseInt(target))
+    });
     $("#slickMultimedia").slick({
         autoplay:true,
         dots:false,
